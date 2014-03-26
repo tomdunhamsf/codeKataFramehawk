@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Framehawk Code Kata</title>
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+<script src="jQuery.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$.get("AjaxServlet",function(data){
+		var elems=$(data).filter('div');
+		elems.appendTo('#topSellers');
+	});
+});
+</script>
+</head>
+<body>
+<h1>FRAMEHAWK Code Kata</h1>
+	<p class="main">
+		Here is our high volume webstore.  You can buy anything under the sun!  
+		Lorem ipsum dolor, blah blah.  All work and no play make Jack a dull boy.
+<br/>
+		The Javadoc comments for BestSellers.java explains the behavior with concurrent access, and some of the reasoning
+		 behind the design.
+		Other classes are pretty simple, but include a short explanation of their purpose.
+		A JUnit 4 test case is also included - BestSellerListTest.
+	</p>
+	<div id="topSellers"></div>
+</body>
+</html>

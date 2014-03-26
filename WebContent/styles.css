@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+body{
+	font-family: Arial,Helvetica,sans-serif;
+}
+h1{
+	text-align:center;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 20 px;
+	color: #000055;
+}
+p.main{
+	width:900 px;
+	float:left;
+}
+#topSellers{
+	float:right;
+	width:200 px;
+	background-color: #F0F0FF
+}
+#bestSellerTitle{
+	font-size: 15 px;
+	text-align: center;
+	float:right;
+}
+.item{
+	font-size:12 px;
+	float:right;
+}
